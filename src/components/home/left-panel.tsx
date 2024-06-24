@@ -28,7 +28,7 @@ const LeftPanel = () => {
             />
             <Input
               type="text"
-              placeholder="Search or start a new chat"
+              placeholder="Pesquisar ou iniciar conversa"
               className="w-full rounded bg-gray-primary py-2 pl-10 text-sm shadow-sm focus-visible:ring-transparent"
             />
           </div>
@@ -43,11 +43,11 @@ const LeftPanel = () => {
         {conversations?.length === 0 && (
           <>
             <p className="mt-3 text-center text-sm text-gray-500">
-              No conversations yet
+              Nenhuma conversa ainda
             </p>
-            <p className="mt-3 text-center text-sm text-gray-500">
-              We understand {"you're"} an introvert, but {"you've"} got to start
-              somewhere 😊
+            <p className="mx-3 mt-3 text-center text-sm text-gray-500">
+              Nós entendemos que {'você é'} um introvertido, mas {'você'} tem
+              que começar de algum lugar 😊
             </p>
           </>
         )}

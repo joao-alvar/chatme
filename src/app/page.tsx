@@ -1,10 +1,12 @@
-import Image from 'next/image'
+import LeftPanel from '@/components/home/left-panel'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <h1>Hello</h1>
+    <main className="m-5">
+      <div className="mx-auto flex h-[calc(100vh-50px)] max-w-[1700px] overflow-y-hidden bg-left-panel">
+        {/* Green background decorator for Light Mode */}
+        <div className="fixed left-0 top-0 -z-30 h-36 w-full bg-green-primary dark:bg-transparent" />
+        <LeftPanel />
       </div>
     </main>
   )
